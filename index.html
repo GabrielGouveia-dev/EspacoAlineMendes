@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Espaço Aline Mendes Beleza & Estética</title>
+    <meta name="description" content="Salão de beleza premium em estilo moderno e minimalista. Cabelo, unhas, lash design, sobrancelha e depilação." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body class="page-home">
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">AM</span>
+          <span class="brand-text">Espaço Aline Mendes Beleza & Estética</span>
+        </a>
+        <nav class="nav" id="nav">
+          <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+          <ul class="nav-list">
+            <li><a class="active" href="index.html">Início</a></li>
+            <li><a href="services.html">Serviços</a></li>
+            <li><a href="professionals.html">Profissionais</a></li>
+            <li><a href="about.html">Sobre</a></li>
+            <li><a href="products.html">Produtos</a></li>
+            <li><a class="btn btn-gold" href="https://wa.me/5599999999999" target="_blank" rel="noopener">Agendar</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero / Carousel -->
+      <section class="hero carousel" aria-label="Destaques">
+        <div class="carousel-track">
+          <div class="slide is-active" style="--bg:url('assets/img/local1.JPG');">
+            <div class="container hero-content">
+              <h1 class="headline">Beleza, Elegância e Sofisticação</h1>
+              <p class="subtitle">Experiências premium em um espaço moderno e acolhedor.</p>
+              <div class="hero-cta">
+                <a href="services.html" class="btn btn-light">Conhecer Serviços</a>
+                <a href="https://wa.me/5599999999999" class="btn btn-gold" target="_blank" rel="noopener">Agendar</a>
+              </div>
+            </div>
+          </div>
+          <div class="slide" style="--bg:url('assets/img/local2.JPG');">
+            <div class="container hero-content">
+              <h2 class="headline">Cabelo • Unhas • Lash • Sobrancelha</h2>
+              <p class="subtitle">Equipe especialista e técnicas de alto padrão.</p>
+              <div class="hero-cta">
+                <a href="professionals.html" class="btn btn-light">Conheça a Equipe</a>
+              </div>
+            </div>
+          </div>
+          <div class="slide" style="--bg:url('assets/img/local3.JPG');">
+            <div class="container hero-content">
+              <h2 class="headline">Ambiente Exclusivo</h2>
+              <p class="subtitle">Detalhes em dourado e atendimento personalizado.</p>
+              <div class="hero-cta">
+                <a href="about.html" class="btn btn-light">Conheça o Espaço</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-dots" aria-hidden="true"></div>
+      </section>
+
+      <!-- Destaques de Serviços -->
+      <section class="section section-dark" id="servicos">
+        <div class="container">
+          <header class="section-header reveal">
+            <h3 class="kicker">Nossos Serviços</h3>
+            <h2 class="title">Destaques do Espaço</h2>
+            <p class="desc">Tratamentos essenciais com qualidade premium para realçar sua beleza.</p>
+          </header>
+          <div class="grid cards-3">
+            <article class="card service-card reveal">
+              <div class="card-media" style="background-image:url('assets/img/cabelo2.JPG');"></div>
+              <div class="card-body">
+                <h3>Cabelo</h3>
+                <p>Cortes, coloração e tratamentos com marcas profissionais.</p>
+                <a class="btn btn-ghost" href="services.html#cabelo">Ver preços</a>
+              </div>
+            </article>
+            <article class="card service-card reveal">
+              <div class="card-media" style="background-image:url('assets/img/local2.JPG');"></div>
+              <div class="card-body">
+                <h3>Manicure & Pedicure</h3>
+                <p>Acabamento impecável e esmaltes de longa duração.</p>
+                <a class="btn btn-ghost" href="services.html#manicure">Ver preços</a>
+              </div>
+            </article>
+            <article class="card service-card reveal">
+              <div class="card-media" style="background-image:url('assets/img/local3.JPG');"></div>
+              <div class="card-body">
+                <h3>Lash Design</h3>
+                <p>Alongamento natural, volume russo e manutenção segura.</p>
+                <a class="btn btn-ghost" href="services.html#lash">Ver preços</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Conheça o Espaço Preview -->
+      <section class="section section-light">
+        <div class="container two-col">
+          <div class="col media reveal">
+            <img src="assets/img/local1.JPG" alt="Interior do Espaço Aline Mendes" />
+          </div>
+          <div class="col content reveal">
+            <h2>Conheça o Espaço Aline Mendes</h2>
+            <p>Um ambiente elegante e acolhedor, pensado em cada detalhe para oferecer conforto, exclusividade e experiências memoráveis.</p>
+            <ul class="feature-list">
+              <li>Atendimento personalizado</li>
+              <li>Produtos e marcas premium</li>
+              <li>Higiene e biossegurança rigorosas</li>
+            </ul>
+            <div class="actions">
+              <a class="btn btn-gold" href="about.html">Ver mais</a>
+              <a class="btn btn-ghost" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand footer-brand"><span class="brand-mark">AM</span> Espaço Aline Mendes Beleza & Estética</div>
+          <p>Beleza e bem-estar com padrão premium.</p>
+        </div>
+        <div>
+          <h4>Contato</h4>
+          <ul class="list">
+            <li>Telefone: <a href="tel:+5599999999999">(99) 99999-9999</a></li>
+            <li>WhatsApp: <a href="https://wa.me/5599999999999" target="_blank" rel="noopener">Conversar</a></li>
+            <li>Instagram: <a href="https://instagram.com/" target="_blank" rel="noopener">@espacoalinemendes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Endereço</h4>
+          <p>R. do Comerciário, 748 - Jardim das Palmeiras<br/>Uberlândia - MG, 38412-290<br/>
+          <a href="https://share.google/4YzYR4CILLozgQfED" target="_blank" rel="noopener">Ver no mapa</a></p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <small>© <span id="year"></span> Espaço Aline Mendes. Todos os direitos reservados.</small>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+  </html>
