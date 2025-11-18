@@ -30,11 +30,30 @@ Abra qualquer arquivo `.html` no navegador (clique duas vezes) ou use a extensã
 - Animações sutis: revelação ao rolar e carrossel hero com auto-play.
 - Layout responsivo: grade fluida e navegação móvel com hambúrguer.
 
-## Próximos passos (opcional)
+## Agendamentos no Google Calendar
 
-- Formulário de contato (somente front-end) com validação.
-- Galeria/slider de fotos do espaço e trabalhos.
-- Página de termos/política e acessibilidade (aria labels adicionais).
+Para registrar agendamentos na agenda do salão, há uma API mínima em Node.
+
+1) Crie um projeto no Google Cloud e ative a Google Calendar API.
+2) Crie uma Service Account e gere uma chave (JSON). Copie `client_email` e `private_key`.
+3) Compartilhe a agenda do salão (Calendar) com a Service Account (permissão: "Fazer alterações em eventos").
+4) Crie um `.env` com base no `.env.example` e preencha:
+	- `GOOGLE_CLIENT_EMAIL` — e-mail da service account
+	- `GOOGLE_PRIVATE_KEY` — chave privada (mantenha as quebras de linha como `\n`)
+	- `GOOGLE_CALENDAR_ID` — ID da agenda (ex: `seuemail@dominio.com` ou ID da agenda compartilhada)
+	- `PORT` — porta da API (3000 padrão)
+
+Executando localmente:
+```powershell
+npm install
+npm run dev:api
+npm run dev:web
+# API: http://localhost:3000  |  Site: http://localhost:5500
+```
+
+A página `agendar.html` envia POST para `/api/appointments`. Em produção, hospede o site e a API (ou use reverse proxy) e ajuste a URL no `assets/js/booking.js`.
+
+Fallback: caso a API não esteja disponível, o site oferece link para adicionar o evento no Google Calendar do usuário.
 
 ---
 

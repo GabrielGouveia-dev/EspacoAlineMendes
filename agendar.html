@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agendar — Espaço Aline Mendes Beleza & Estética</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body class="page-booking">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html"><span class="brand-mark">AM</span><span class="brand-text">Espaço Aline Mendes Beleza & Estética</span></a>
+        <nav class="nav" id="nav">
+          <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+          <ul class="nav-list">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="services.html">Serviços</a></li>
+            <li><a href="professionals.html">Profissionais</a></li>
+            <li><a href="about.html">Sobre</a></li>
+            <li><a href="products.html">Produtos</a></li>
+            <li><a class="btn btn-gold active" href="agendar.html">Agendar</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero section-dark">
+        <div class="container">
+          <h1 class="title">Agendar um Serviço</h1>
+          <p class="desc">Escolha o serviço, dia e horário. Confirmaremos na nossa agenda.</p>
+        </div>
+      </section>
+
+      <section class="section section-light">
+        <div class="container">
+          <form id="booking-form" class="card" novalidate>
+            <div class="card-body">
+              <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 16px;">
+                <div>
+                  <label for="name">Seu nome</label>
+                  <input id="name" name="name" type="text" required placeholder="Nome completo" />
+                </div>
+                <div>
+                  <label for="phone">WhatsApp</label>
+                  <input id="phone" name="phone" type="tel" required placeholder="(xx) xxxxx-xxxx" />
+                </div>
+                <div>
+                  <label for="service">Serviço</label>
+                  <select id="service" name="service" required>
+                    <option value="">Selecione…</option>
+                    <option>Cabelo</option>
+                    <option>Manicure / Pedicure</option>
+                    <option>Lash Design</option>
+                    <option>Sobrancelha</option>
+                    <option>Depilação</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="date">Data</label>
+                  <input id="date" name="date" type="date" required />
+                </div>
+                <div>
+                  <label for="time">Horário</label>
+                  <input id="time" name="time" type="time" required />
+                </div>
+                <div>
+                  <label for="duration">Duração (min)</label>
+                  <input id="duration" name="duration" type="number" min="15" step="15" value="60" required />
+                </div>
+                <div style="grid-column: 1/-1;">
+                  <label for="notes">Observações (opcional)</label>
+                  <textarea id="notes" name="notes" rows="3" placeholder="Preferências, profissional, etc."></textarea>
+                </div>
+              </div>
+              <div class="actions" style="margin-top:14px;">
+                <button class="btn btn-gold" type="submit">Agendar</button>
+                <button class="btn btn-light" type="button" id="gcal-link" hidden>Adicionar no Google Calendar</button>
+              </div>
+              <p id="booking-status" class="muted" style="margin-top:10px;"></p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand footer-brand"><span class="brand-mark">AM</span> Espaço Aline Mendes Beleza & Estética</div>
+          <p>Beleza e bem-estar com padrão premium.</p>
+        </div>
+        <div>
+          <h4>Contato</h4>
+          <ul class="list">
+            <li>Telefone: <a href="tel:+5599999999999">(99) 99999-9999</a></li>
+            <li>WhatsApp: <a href="https://wa.me/5599999999999" target="_blank" rel="noopener">Conversar</a></li>
+            <li>Instagram: <a href="https://instagram.com/" target="_blank" rel="noopener">@espacoalinemendes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Endereço</h4>
+          <p>R. do Comerciário, 748 - Jardim das Palmeiras<br/>Uberlândia - MG, 38412-290<br/>
+          <a href="https://share.google/4YzYR4CILLozgQfED" target="_blank" rel="noopener">Ver no mapa</a></p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <small>© <span id="year"></span> Espaço Aline Mendes. Todos os direitos reservados.</small>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/booking.js"></script>
+  </body>
+  </html>

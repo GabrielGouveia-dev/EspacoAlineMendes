@@ -1,0 +1,17 @@
+{
+  "name": "espaco-aline-mendes",
+  "version": "1.0.0",
+  "description": "Site do Espaço Aline Mendes — front-end e API de agendamento Google Calendar",
+  "private": true,
+  "scripts": {
+    "dev:api": "node server.js",
+    "dev:web": "npx serve -l 5500 .",
+    "dev": "powershell -Command \"Start-Job { npm run dev:api }; Start-Job { npm run dev:web }; Receive-Job -AnyChild -Wait\""
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "googleapis": "^132.0.0"
+  }
+}
